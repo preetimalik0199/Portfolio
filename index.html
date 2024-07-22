@@ -9,9 +9,10 @@
 </head>
 <body>
 <div id="header">
-    <div class="container">
+    <div  class="container">
         <nav>
             <h1 class="logo">Preeti</h1>
+            <!--<img src="logo.png" class="logo">-->
             <ul id="sidemenu">
               <li><a href="#header">Home</a></li> 
               <li><a href="#about">About</a></li>  
@@ -45,22 +46,22 @@
                 </div>
                 <div class="tab-contents active-tab" id="Skills">
                     <ul>
-                        <li><span>Web Development</span><br> HTML, CSS, JavaScript, Bootstrap and React</li><br>
-                        <li><span>Android Development</span><br>Java and XML</li><br>
-                        <li><span>Software Development</span><br>C, C++, Java and Python</li><br>
+                        <li><span>Web Development</span><br> HTML, CSS, JavaScript, Bootstrap and React</li>
+                        <li><span>Android Development</span><br>Java and XML</li>
+                        <li><span>Software Development</span><br>C, C++, Java and Python</li>
                         <li><span>Database</span><br>SQL, Oracle, DBMS</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="Experience">
                     <ul>
-                        <li><span>October 2023 -  present</span><br>Web Developer at Hacktech</li><br>
-                        <li><span>October 2023 -  present</span><br>Web Developer Intern at Unified Mentor</li><br>
+                        <li><span>October 2023 -  present</span><br>Web Developer at Hacktech</li>
+                        <li><span>October 2023 -  present</span><br>Web Developer Intern at Unified Mentor</li>
                         <li><span>July 2023 -  August 2023</span><br>Android Developer Intern at HIPL</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="Education">
                     <ul>
-                        <li><span>2022-2024</span><br> MCA from Amity University Haryana</li><br>
+                        <li><span>2022-2024</span><br> MCA from Amity University Haryana</li>
                         <li><span>2019-2022</span><br> BCA from GCW Rohtak</li>
                     </ul>
                 </div>
@@ -76,27 +77,27 @@
         <div class="services-list">
             <div> 
                 <i class="fa-solid fa-code"></i>   
-                <h2>Web Design</h2>
-                <p>Designing and developing websites using HTML, CSS, JavaScript, and React.</p>
-                <a href="#">Learn More</a>
+                    <h2>Web Design</h2>
+                    <p>Designing and developing websites using HTML, CSS, JavaScript, and React.</p>
+                    <a href="#">Learn More</a>
             </div>
             <div>  
                 <i class="fa-brands fa-app-store"></i>  
                 <h2>App Design</h2>
                 <p>Designing and developing websites using HTML, CSS, JavaScript, and React.</p>
                 <a href="#">Learn More</a>
-            </div>
-            <div> 
-                <i class="fa-solid fa-code"></i>   
-                <h2>Software Development</h2>
-                <p>Designing and developing websites using HTML, CSS, JavaScript, and React.</p>
-                <a href="#">Learn More</a>
-            </div>
+        </div>
+        <div> 
+            <i class="fa-solid fa-code"></i>   
+            <h2>Software Development</h2>
+            <p>Designing and developing websites using HTML, CSS, JavaScript, and React.</p>
+            <a href="#">Learn More</a>
+    </div>
         </div>   
     </div>
 </div>
 
-<!------------------------Portfolio--------------------------------->
+    <!------------------------Portfolio--------------------------------->
 <div id="portfolio">
     <div class="container">
         <h1 class="sub-title"> My Work</h1>
@@ -129,12 +130,12 @@
             </div>
         
         </div>
-        <a href="#" class="btn">See More</a>
+        <a href="https://github.com/preetimalik0199" target="_blank" class="btn">See More</a>
 
        </div> 
     </div>
 
-<!---------------------------Contact------------------------->
+<!-----------------------------Contact------------------------->
 <div id="contact">  
     <div class="container">
         <div class="row">
@@ -143,21 +144,21 @@
                 <p><i class="fa-solid fa-paper-plane"></i>preetimalik70820@gmail.com</p>
                 <p><i class="fa-solid fa-phone"></i>+91 7206724366</p>
                 <div class="social-icons">
-                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com/in/preetimalik0199" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <a href="My_CV.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form id="contactForm" name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                <form id="contact-form">
+                   <input type="text" name="Name" placeholder="Your Name" required>
+                   <input type="email" name="Email" placeholder="Your Email" required>
+                   <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
-                <span id="msg"></span>
+                <p id="msg-sent" style="display:none; color:green;">Message sent successfully!</p>
             </div>
         </div>
     </div>
@@ -165,5 +166,44 @@
         <p>Copyright @ Preeti Malik. Made with <i class="fa-solid fa-heart"></i></p>
     </div>
 </div>
+
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+} 
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    fetch('https://script.google.com/macros/s/AKfycbxl4e4SWB7fD4wlJvLDGemUKk4whfUEYFkDvsbawmNkTdtK5CPkf9UsG6k_S0BC71rGeA/exec', {
+        method: 'POST',
+        body: new FormData(document.getElementById('contact-form'))
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('msg-sent').style.display = 'block';
+        document.getElementById('contact-form').reset();
+    })
+    .catch(error => console.error('Error!', error.message));
+});
+</script>
+
 </body>
 </html>
