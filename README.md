@@ -78,9 +78,9 @@ If you have suggestions or improvements, feel free to create an issue or submit 
 
 Feel free to reach out to me via the contact form on the portfolio or through the following:
 
-- **Email**: [youremail@example.com](preetimalik70820@gmail.com)
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/preetimalik0199/)
-- **GitHub**: [Your GitHub Profile](https://github.com/preetimalik0199)
+- **Email**: preetimalik70820@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/preetimalik0199/
+- **GitHub**: https://github.com/preetimalik0199
 
 Thank you for visiting my portfolio!
 
